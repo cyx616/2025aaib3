@@ -9,14 +9,16 @@ int main()
     cout<<"請輸入4位數(數字不能重覆)";
     int n;
     cin>>n;
-    vector<int> a;
-    for(int i=0;i<4;i++){
+    for(int i=0;i<7;i++){
+            vector<int> a;
+        for(int i=0;i<4;i++){
         a.push_back(n%10);
         n=n/10;
+        }
+        sort(a.begin(),a.end());
+        int M = a[3]*1000+a[2]*100+a[1]*10+a[0];
+        int m = a[0]*1000+a[1]*100+a[2]*10+a[3];
+        n = M-m;
+        printf("%d-%d-%d\n",M,m,n);
     }
-    sort(a.begin(),a.end());
-    int M = a[3]*1000+a[2]*100+a[1]*10+a[0];
-    int m = a[0]*1000+a[1]*100+a[2]*10+a[3];
-    n = M-m;
-    printf("%d-%d-%d\n",M,m,n);
 }
