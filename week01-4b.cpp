@@ -1,13 +1,14 @@
-///week01-4a.cpp¨Ï¥Îc»y¨¥¼g
-#include <iostream>///¨Ï¥Îc++»y¨¥¥~±¾
-using namespace std;///¨Ï¥Îc++»y¨¥ªº©R¦WªÅ¶¡
+///week01-4b.cppä½¿ç”¨cèªžè¨€å¯«
+#include <iostream>///ä½¿ç”¨c++èªžè¨€å¤–æŽ›
+using namespace std;///ä½¿ç”¨c++èªžè¨€çš„å‘½åç©ºé–“
 int main()
 {
     int a,b;
-    cin >> a>> b;///c++»y¨¥ Åª¸ê®Æ
+    cin >> a>> b;///c++èªžè¨€ è®€è³‡æ–™
     int ans = 0;
     for(int i=a;i<=b;i++){
         if(i%3==0)ans += i;
     }
-   cout << ans;///c++»y¨¥ ¦L¸ê®Æ
+   cout << ans;///c++èªžè¨€ å°è³‡æ–™
 }
+
